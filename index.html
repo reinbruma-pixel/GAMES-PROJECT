@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Whack-a-Dog-By:Raine</title>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="posters"></div>
+<div id="app">
+  <div class="hud"><span class="pl" id="pl">Pup Lv 1</span><div class="bar"><i id="xb"></i></div><span class="candy" id="cd">🍬 0</span><button class="mute" id="mute" aria-label="Mute sound">🔊</button></div>
+
+  <section class="screen on" id="menu">
+    <div class="panel">
+      <h1>Whack-a-Pup <span class="wig">🐶</span></h1>
+      <p>Bonk the pups before they hide. Clear 100 levels across 10 biomes. Every level wins a candy and EXP.</p>
+      <p id="mnote"></p>
+      <button class="btn" id="playBtn">Play</button>
+      <h2>Pick a level</h2>
+      <div id="pick"></div>
+    </div>
+  </section>
+
+  <section class="screen" id="play">
+    <div class="cab"><div class="marq"><b id="mq"></b></div>
+    <div id="game">
+      <div class="decor" id="decor"></div>
+      <div class="top"><span class="chip" id="gl"></span><span class="chip" id="gb"></span><span class="chip" id="gt">20s</span></div>
+      <div class="prog"><i id="pg"></i></div>
+      <div class="tm"><i id="tmb"></i></div>
+      <div class="field" id="field"></div>
+      <div class="ban" id="ban"></div>
+    </div></div>
+    <div style="text-align:center"><button class="btn alt" id="quit">Back to menu</button></div>
+  </section>
+</div>
+
+<div id="modal"><div class="card" id="card"></div></div>
+<canvas id="cf"></canvas>
+
+<script src="game.js"></script>
+</body>
+</html>
